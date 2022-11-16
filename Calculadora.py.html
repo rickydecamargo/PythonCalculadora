@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #808080;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">#Essa automação inicializa a calculadora e soma 45 + 45 e depois fecha a aplicação.</span>
+
+<span class="s2">import </span><span class="s0">pyautogui </span><span class="s2">as </span><span class="s0">posicaoMouse</span>
+
+<span class="s1">#Tempo de esperar para encontrar o icone do Windows:</span>
+<span class="s0">posicaoMouse.sleep(</span><span class="s3">2</span><span class="s0">)</span>
+
+<span class="s1">#Movendo o mouse para o icone do Windows:</span>
+<span class="s0">posicaoMouse.moveTo(x=</span><span class="s3">27</span><span class="s2">, </span><span class="s0">y=</span><span class="s3">749</span><span class="s0">)</span>
+
+<span class="s1">#Clicando no Icone do Windows:</span>
+<span class="s0">posicaoMouse.click(x=</span><span class="s3">27</span><span class="s2">, </span><span class="s0">y=</span><span class="s3">749</span><span class="s0">)</span>
+
+<span class="s1">#Esperar carregar a barra de tarefas:</span>
+<span class="s0">posicaoMouse.sleep(</span><span class="s3">4</span><span class="s0">)</span>
+
+<span class="s1">#Abrindo a Calculadora:</span>
+<span class="s0">posicaoMouse.typewrite(</span><span class="s4">'Calculadora'</span><span class="s0">)</span>
+
+<span class="s1">#Movendo o mouse para o icone da Calculadora:</span>
+<span class="s0">posicaoMouse.moveTo(x=</span><span class="s3">159</span><span class="s2">, </span><span class="s0">y=</span><span class="s3">366</span><span class="s0">)</span>
+
+<span class="s1">#Clicando no icone da Calculadora:</span>
+<span class="s0">posicaoMouse.click(x=</span><span class="s3">120</span><span class="s2">, </span><span class="s0">y=</span><span class="s3">215</span><span class="s0">)</span>
+
+<span class="s1">#Esperar carregar a barra de tarefas:</span>
+<span class="s0">posicaoMouse.sleep(</span><span class="s3">5</span><span class="s0">)</span>
+
+<span class="s1">#Clicando no numero 9:</span>
+<span class="s0">posicaoMouse.click(x=</span><span class="s3">600</span><span class="s2">, </span><span class="s0">y=</span><span class="s3">430</span><span class="s0">)</span>
+
+<span class="s1">#Esperar digitar o primeiro numero (9)</span>
+<span class="s0">posicaoMouse.sleep(</span><span class="s3">1</span><span class="s0">)</span>
+
+<span class="s1">#Clicando no numero 9</span>
+<span class="s0">posicaoMouse.click(x=</span><span class="s3">600</span><span class="s2">, </span><span class="s0">y=</span><span class="s3">430</span><span class="s0">)</span>
+
+<span class="s1">#Esperar digitar o segundo numero (9):</span>
+<span class="s0">posicaoMouse.sleep(</span><span class="s3">2</span><span class="s0">)</span>
+
+<span class="s1">#Clicando no botao multiplicacao:</span>
+<span class="s0">posicaoMouse.click(x=</span><span class="s3">860</span><span class="s2">, </span><span class="s0">y=</span><span class="s3">470</span><span class="s0">)</span>
+
+<span class="s1">#Esperar clicar na multiplicacao:</span>
+<span class="s0">posicaoMouse.sleep(</span><span class="s3">2</span><span class="s0">)</span>
+
+<span class="s1">#Clicando no terceiro numero 9:</span>
+<span class="s0">posicaoMouse.click(x=</span><span class="s3">600</span><span class="s2">, </span><span class="s0">y=</span><span class="s3">430</span><span class="s0">)</span>
+
+<span class="s1">#Esperar digitar o terceiro numero (9):</span>
+<span class="s0">posicaoMouse.sleep(</span><span class="s3">1</span><span class="s0">)</span>
+
+<span class="s1">#Clicando no quarto numero:</span>
+<span class="s0">posicaoMouse.click(x=</span><span class="s3">600</span><span class="s2">, </span><span class="s0">y=</span><span class="s3">430</span><span class="s0">)</span>
+
+<span class="s1">#Esperar digitar o quarto numero (9):</span>
+<span class="s0">posicaoMouse.sleep(</span><span class="s3">2</span><span class="s0">)</span>
+
+<span class="s1">#Clicando no em Igual:</span>
+<span class="s0">posicaoMouse.click(x=</span><span class="s3">850</span><span class="s2">, </span><span class="s0">y=</span><span class="s3">655</span><span class="s0">)</span>
+
+<span class="s1">#Esperar digitar o terceiro numero (9):</span>
+<span class="s0">posicaoMouse.sleep(</span><span class="s3">5</span><span class="s0">)</span>
+
+<span class="s1">#Clicando no numero em Fechar:</span>
+<span class="s0">posicaoMouse.click(x=</span><span class="s3">1325</span><span class="s2">, </span><span class="s0">y=</span><span class="s3">20</span><span class="s0">)</span>
+
+<span class="s0">print(</span><span class="s4">'Aplicativo Calculadora Fechado.'</span><span class="s0">)</span></pre>
+</body>
+</html>
